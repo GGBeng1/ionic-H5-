@@ -32,11 +32,11 @@
     </tr>
     <tr>
     	<td>效果图</td>
-    	<td><img src="readme_imgs/1.png" alt=""></td>
-        <td><img src="readme_imgs/1_1.png" alt=""></td>
-    	<td><img src="readme_imgs/2.png" alt=""></td>
-        <td><img src="readme_imgs/3.png" alt=""></td>
-    	<td><img src="readme_imgs/4.png" alt=""></td>
+    	<td><img src="readme_imgs/1.jpg" alt=""></td>
+        <td><img src="readme_imgs/1_1.jpg" alt=""></td>
+    	<td><img src="readme_imgs/2.jpg" alt=""></td>
+        <td><img src="readme_imgs/3.jpg" alt=""></td>
+    	<td><img src="readme_imgs/4.jpg" alt=""></td>
     </tr>
 </table>
 
