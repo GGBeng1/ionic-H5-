@@ -1,0 +1,35 @@
+page-avatar {
+    .header {
+        height: 40%;
+        text-align: center;
+        background-color: #8CD0CF;
+        .thumbnail {
+            position: relative;
+            left:145px;
+            margin-bottom: 4px;
+            height: 100% !important;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        h3 {
+            font-size: 13px;
+            color: #333333;
+        }
+    }
+    .ito {
+        h2 {
+            margin-bottom:15px;
+        }
+    }
+    .btn {
+        position: absolute;
+        top:0;
+        left:8px;
+        z-index: 999;
+        font-size: 40px;
+        color:#fff;
+    }
+}

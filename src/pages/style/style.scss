@@ -1,0 +1,332 @@
+page-style {
+	color: #333;
+	background: #f2f4f7;
+
+	.fixed-content {
+		margin: 0;
+	}
+
+	.scroll-content {
+		margin: 0;
+	}
+
+	.item-ios {
+		color: #333;
+	}
+
+	.style-slider {
+		padding: 0;
+
+		.label, .label-ios {
+			margin: 0;
+		}
+
+		.item-inner {
+			padding: 0 !important;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.style-banner {
+		.hot-icon {
+			padding: 3px 5px;
+			border-radius: 2px;
+			background: #ea7438;
+			color: #fff;
+			font-size: 12px;
+		}
+
+		.dec {
+			color: #333;
+			font-size: 14px;
+		}
+	}
+
+	.style-online {
+		padding: 15px;
+		overflow: hidden;
+		border-bottom: 5px solid #f2f4f7;
+
+		.icon {
+			color: #ecb447;
+		}
+
+		.title {
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		.dec {
+			float: right;
+			font-size: 10px;
+			color: #999;
+		}
+
+		.label-ios {
+			margin: 0;
+		}
+	}
+
+	.style-online-card {
+		padding: 10px;
+		overflow: hidden;
+		line-height: 50px;	
+
+		img {
+			float: right;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			border: 1px solid #ccc;
+		}
+	}
+
+	.style-seckill {
+		padding: 15px;
+		overflow: hidden;
+
+		.icon {
+			color: #f52;
+		}
+
+		.title {
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		.dec {
+			float: right;
+			font-size: 12px;
+			color: #999;
+			em {
+				margin: 0 2px;
+				padding: 1px 3px;
+				font-style: normal;
+				background: #333;
+				color: #fff;
+				border-radius: 2px;
+			}
+		}
+	}
+
+	.style-sliders-wrap {
+		overflow: hidden;
+		padding: 5px 15px 10px;
+		border-bottom: 5px solid #f2f4f7;
+
+		.style-sliders-con {
+			width: 9999px;
+			overflow: hidden;
+			box-shadow: 0 0 5px rgba(0,0,0,.2);
+			-webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);
+
+			.slider-item {
+				float: left;
+				display: inline-block;
+				margin-right: 10px;
+				padding: 5px;
+				width: 120px;
+				height: 180px;
+
+				p {
+					margin: 0;
+					line-height: 24px;
+					text-align: left;
+
+					em {
+						font-style: normal;
+					}
+				}
+
+				.title {
+					font-size: 14px;
+				}
+
+				.finaly {
+					color: #ed6d3d;
+					font-size: 12px;
+				}
+
+				.del {
+					color: #999;
+					font-size: 10px;
+				}
+
+				.num {
+					color: #ed6d3d;
+					font-size: 10px;
+				}
+
+				.btn {
+					padding: 3px;
+					color: #fff;
+					background: #ed6d3d;
+					font-size: 12px;
+					border-radius: 2px;
+				}
+			}
+		}
+	}
+
+	.style-edit {
+		padding: 15px 15px 0;
+		border-bottom: 5px solid #f2f4f7;
+
+		p {
+			margin: 0;
+		}
+
+		.sm-title {
+			position: relative;
+			text-align: center;
+			width: 90px;
+			margin: 0 auto;
+			font-size: 12px;
+			color: #999;
+
+			&::before {
+				content: '';
+				width: 20px;
+				height: 1px;
+				background: #ccc;
+				position: absolute;
+				right: 80px;
+				top: 8px;
+			}
+
+			&::after {
+				content: '';
+				width: 20px;
+				height: 1px;
+				background: #ccc;
+				position: absolute;
+				left: 80px;
+				top: 8px;
+			}
+		}
+
+		.title {
+			text-align: center;
+			font-size: 18px;
+			margin: 10px 0;
+		}
+
+		.editLists-wrap {
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+
+		.editLists {
+			margin-top: 20px;
+			overflow: hidden;
+
+			.img {
+				float: left;
+				width: 40%;
+			}
+
+			h6 {
+				margin: 5px 0;
+				font-size: 14px;
+				color: #666;
+			}
+
+			.editList-con {
+				float: right;
+				width: 55%;
+			}
+
+			.editList-star {
+				font-size: 9px;
+				color: #ccc;
+
+				.stars {
+					color: #7ad29d;
+				}
+			}
+
+			.editList-dec {
+				font-size: 12px;
+				color: #999;
+			}
+		}
+
+		.more {
+			height: 32px;
+			line-height: 32px;
+			text-align: center;
+			border-top: 1px solid #eee;
+
+			a {
+				color: #7ad29d;
+				font-size: 12px;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.style-everyday {
+		.everyday-title {
+			text-align: center;
+			img {
+				width: 200px;
+				height: 100%;
+			}
+		}
+
+		.everyday-item {
+
+		}
+
+		.item-title {
+			img {
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+			}
+			span {
+				color: #999;
+				font-size: 9px;
+			}
+		}
+
+		.item-con {
+			margin: 10px 0;
+			overflow: hidden;
+
+			.l {
+				float: left;
+				width: 70%;
+				// 文字自动换行
+				white-space: normal;
+			}
+
+			h6 {
+				color: #333;
+				font-size: 14px;
+			}
+
+			p {
+				color: #999;
+				font-size: 9px;
+			}
+
+			.r {
+				float: right;
+				width: 30%;
+				text-align: right;
+				vertical-align: middle;
+			}
+
+			img {
+				width: 70px;
+				height: 70px;
+				border-radius: 10px;
+			}
+		}
+	}
+}

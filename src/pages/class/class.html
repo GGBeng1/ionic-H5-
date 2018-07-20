@@ -1,0 +1,97 @@
+
+
+<!-- <ion-item no-lines class='banner'> -->
+    <ion-slides autoplay="2000" loop=true pager=true>
+        <ion-slide *ngFor="let item of slidesItems">
+            <img src="{{item.img}}">
+        </ion-slide>
+    </ion-slides>
+<!-- </ion-item> -->
+<ion-item no-lines>
+    <h3>精选好课</h3>
+</ion-item>
+
+<ion-grid>
+    <ion-row>
+        <ion-col col-6 *ngFor='let item of classList'>
+            <img src="{{item.img}}" alt="" />
+            <h3>{{item.title}}</h3>
+                <ion-icon name='star'></ion-icon>
+                <ion-icon name='star'></ion-icon>
+                <ion-icon name='star'></ion-icon>
+                <ion-icon name='star'></ion-icon>
+                <ion-icon name='star-half'></ion-icon>
+            <span>{{item.ito}}</span>
+            <h2>{{item.prc}}<s>{{item.reprc}}</s></h2>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+<ion-item class='rotate' no-lines>
+    <span (click)="rotate($event)"><img src='../../assets/imgs/module3/rotate.png' alt="">换一批</span>
+</ion-item>
+<ion-item no-lines>
+    <h3>免费好课</h3>
+</ion-item>
+
+<ion-grid>
+    <ion-row>
+        <ion-col col-6 *ngFor='let item of classListFree'>
+            <img src="{{item.img}}" alt="" />
+            <span>{{item.ito}}</span>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+<ion-item class='rotate' no-lines (click)="rotate($event)">
+   <span (click)="rotate($event)"><img src='../../assets/imgs/module3/rotate.png' alt="">换一批</span>
+</ion-item>
+<ion-item no-lines>
+    <h3>系列课程</h3>
+</ion-item>
+
+<!-- <ion-segment>
+      <ion-segment *ngFor="let item of slidesItems">
+        <img src="{{item.img}}">
+      </ion-segment>
+</ion-segment> -->
+
+<ion-slides slidesPerView='2' spaceBetween='20' class='banner2'>
+    <ion-slide *ngFor="let item of slidesItems">
+        <img src="{{item.img}}">
+    </ion-slide>
+</ion-slides>
+<!-- <ion-slides slidesPerView='2' spaceBetween='20' class='banner2'>
+    <ion-slide *ngFor="let item of slidesItems2">
+        <img src="{{item.img}}">
+    </ion-slide>
+</ion-slides> -->
+
+<!-- <div class="box">
+    <ul class='listBox' id="listBox">
+        <li class='classlist' *ngFor="let item of slidesItems" (swipe)="swipeImg($event)">
+            <img src="{{item.img}}">
+        </li>
+    </ul>
+</div> -->
+<ion-item no-lines>
+    <h3>精选好课</h3>
+</ion-item>
+
+<ion-grid>
+    <ion-row>
+        <ion-col col-6 *ngFor='let item of slidesItems2'>
+            <img [src]="item.img" alt="" />
+            <h3>{{item.title}}</h3>
+                <ion-icon name='star'></ion-icon>
+                <ion-icon name='star'></ion-icon>
+                <ion-icon name='star'></ion-icon>
+                <ion-icon name='star'></ion-icon>
+                <ion-icon name='star-half'></ion-icon>
+            <span>{{item.ito}}</span>
+            <h2>{{item.prc}}<s>{{item.reprc}}</s></h2>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+<ion-infinite-scroll (ionInfinite)="doInfinite($event)" threshold="100px">
+<ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+</ion-infinite-scroll-content>
+</ion-infinite-scroll>

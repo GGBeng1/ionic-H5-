@@ -1,0 +1,14 @@
+page-count {
+    .border:nth-child(1),
+    .border:nth-child(2),
+    .border:nth-child(6),
+    .border:nth-child(8) {
+        border-bottom: 6px solid #ddd !important;
+    }
+    .header {
+        h3 {
+            color:#bbb;
+            font-size: 12px;
+        }
+    }
+}

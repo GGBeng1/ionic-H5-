@@ -1,0 +1,182 @@
+<ion-header>
+
+	<ion-searchbar placeholder='网易云课堂'></ion-searchbar>
+
+</ion-header>
+
+<div class="tabList">
+	<ul class="nav">
+		<li class="nav-item" 
+			*ngFor="let item of navData; index as index" 
+			[ngClass]="{ 'active' : (selected === index)}"
+			(tap)="tabModel($event, index)">{{item.title}}</li>
+	</ul>
+
+	<div class="con" [ngSwitch]="idx">
+		<!-- 特别推荐 -->
+		<div class="item" *ngSwitchCase="0">
+			<div class="img">
+				<img src="assets/imgs/module1/tab2_01.png" alt="">
+				<img src="assets/imgs/module1/tab2_02.png" alt="">
+			</div>
+			<div class="sm-title">
+				<h6>学习兴趣</h6>
+				<span>移动开发</span><span>前端开发</span>
+			</div>
+			<ul class="edit">
+				<h6>编辑推荐</h6>
+				<li *ngFor="let item of editData"><span class="dot" [style.backgroundColor]="item.color"></span>&emsp;{{item.text}}</li>
+			</ul>
+		</div>
+		<!-- 办公效率 -->
+		<div class="item" *ngSwitchCase="1">
+			<div class="img">
+				<img src="assets/imgs/module1/tab2_02.png" alt="">
+			</div>
+			<div class="sm-title">
+				<h6>办公软件</h6>
+				<span>PPT</span><span>Excel</span><span>Word</span>
+				<span>Project</span><span>Keynote</span><span>Outlook</span>
+			</div>
+			<div class="sm-title">
+				<h6>工作效率</h6>
+				<span>时间管理</span><span>思维导图</span>
+			</div>
+			<div class="sm-title">
+				<h6>电脑基础</h6>
+				<span>基础操作</span><span>常用工具</span>
+			</div>
+		</div>
+		<!-- 职业发展 -->
+		<div class="item" *ngSwitchCase="2">
+			<div class="img">
+				<img src="assets/imgs/module1/tab2_01.png" alt="">
+			</div>
+			<div class="sm-title">
+				<h6>求职应聘</h6>
+				<span>职业规划</span><span>求职简历</span><span>面试技巧</span>
+			</div>
+			<div class="sm-title">
+				<h6>个人提升</h6>
+				<span>职场经验</span><span>人脉管理</span><span>礼仪形象</span>
+				<span>人际沟通</span><span>团队协作</span>
+			</div>
+			<div class="sm-title">
+				<h6>专业岗位</h6>
+				<span>医学科研</span><span>文献写作</span><span>商务谈判</span>
+				<span>职业培训</span><span>特色职业</span>
+			</div>
+			<div class="sm-title">
+				<h6>管理能力</h6>
+				<span>领导力</span><span>人力资源</span><span>财务管理</span>
+				<span>项目管理</span>
+			</div>
+		</div>
+		<!-- 编程开发 -->
+		<div class="item" *ngSwitchCase="3">
+			<div class="img">
+				<img src="assets/imgs/module1/tab2_02.png" alt="">
+			</div>
+			<div class="sm-title">
+				<h6>编程语言</h6>
+				<span>Python</span><span>PHP</span><span>C语言</span>
+				<span>Java</span><span>C++</span><span>C#</span>
+				<span>Swift</span><span>R</span><span>Git</span>
+			</div>
+			<div class="sm-title">
+				<h6>人工智能与数据</h6>
+				<span>人工智能</span><span>数据科学</span><span>大数据</span>
+				<span>数据库</span><span>区块链</span>
+			</div>
+			<div class="sm-title">
+				<h6>前端开发</h6>
+				<span>开发语言</span><span>开发框架</span><span>开发实战</span>
+			</div>
+		</div>
+		<!-- 产品和设计 -->
+		<div class="item" *ngSwitchCase="4">
+			<div class="img">
+				<img src="assets/imgs/module1/tab2_01.png" alt="">
+			</div>
+			<div class="sm-title">
+				<h6>产品策划与运营</h6>
+				<span>产品经理</span><span>产品运营</span><span>新媒体运营</span>
+			</div>
+			<div class="sm-title">
+				<h6>平面设计</h6>
+				<span>广告海报</span><span>字体设计</span><span>电商视觉设计</span>
+			</div>
+			<div class="sm-title">
+				<h6>用户体验</h6>
+				<span>UI设计</span><span>交互设计</span><span>用户研究</span>
+			</div>
+			<div class="sm-title">
+				<h6>游戏美术</h6>
+				<span>角色</span><span>场景</span><span>模型设计</span>
+				<span>特效设计</span><span>动画设计</span><span>游戏UI</span>
+			</div>
+		</div>
+		<!-- 生活方式 -->
+		<div class="item" *ngSwitchCase="5">
+			<div class="img">
+				<img src="assets/imgs/module1/tab2_01.png" alt="">
+				<img src="assets/imgs/module1/tab2_02.png" alt="">
+			</div>
+			<div class="sm-title">
+				<h6>摄影影视</h6>
+				<span>摄影基础</span><span>摄影后期</span><span>影视基础</span>
+				<span>影视后期</span><span>手机摄影</span><span>PR剪辑</span>
+				<span>AE特效</span><span>微课视频制作</span>
+			</div>
+			<div class="sm-title">
+				<h6>音乐乐器</h6>
+				<span>乐理基础</span><span>声乐唱歌</span><span>编曲创作</span>
+				<span>吉他与Ukulele</span><span>钢琴与电子琴</span><span>更多乐器</span>
+			</div>
+			<div class="sm-title">
+				<h6>投资理财</h6>
+				<span>理财基础</span><span>基金</span><span>股票债券</span>
+				<span>保险</span><span>外汇</span><span>房产</span>
+				<span>P2P</span><span>区块链</span>
+			</div>
+		</div>
+		<!-- 亲自教育 -->
+		<div class="item" *ngSwitchCase="6">
+			<div class="img">
+				<img src="assets/imgs/module1/tab2_01.png" alt="">
+			</div>
+			<div class="sm-title">
+				<h6>孕产鱼儿</h6>
+				<span>孕期前后</span><span>分娩·产后</span><span>科学喂养</span>
+				<span>声场发育</span><span>护理保健</span><span>疾病重症</span>
+			</div>
+			<div class="sm-title">
+				<h6>启蒙教育</h6>
+				<span>英语启蒙</span><span>关键能力</span><span>认知早教</span>
+			</div>
+		</div>
+		<!-- 语言学习 -->
+		<div class="item" *ngSwitchCase="7">
+			<div class="img">
+				<img src="assets/imgs/module1/tab2_02.png" alt="">
+			</div>
+			<div class="sm-title">
+				<h6>实用英语</h6>
+				<span>口语</span><span>英语单词</span><span>四六级</span>
+				<span>新概念</span><span>商务英语</span>
+			</div>
+			<div class="sm-title">
+				<h6>出国留学</h6>
+				<span>托福</span><span>雅思</span><span>GRE</span>
+				<span>日语能力考试</span>
+			</div>
+			<div class="sm-title">
+				<h6>日语</h6>
+				<span>五十音图</span><span>标准日本语</span><span>新编日语</span>
+				<span>大家的日语</span><span>日语能力考试</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+

@@ -1,0 +1,43 @@
+{
+    "errno" : 0,
+    "data" : [
+        {"img":"assets/imgs/6.jpg",
+          "title":"张老师面试详解",
+          "ito":"4.7 1485人学过",
+          "prc":"￥9.9",
+          "reprc":"￥998.00"
+        },{"img":"assets/imgs/6.jpg",
+          "title":"PHP实用教程",
+          "ito":"4.7 1348人学过",
+          "prc":"￥69",
+          "reprc":"￥95.00"
+        },{"img":"assets/imgs/6.jpg",
+          "title":"Xshell实用详解",
+          "ito":"4.7 1248人学过",
+          "prc":"￥82",
+          "reprc":"￥112.00"
+        },{"img":"assets/imgs/6.jpg",
+          "title":"Fll实用教程",
+          "ito":"4.7 1148人学过",
+          "prc":"￥69",
+          "reprc":"￥75.00"
+        },{"img":"assets/imgs/6.jpg",
+          "title":"JAVA实用教程",
+          "ito":"4.7 48人学过",
+          "prc":"￥69",
+          "reprc":"￥95.00"
+        },{"img":"assets/imgs/6.jpg",
+          "title":"TensorFlow实用教程",
+          "ito":"4.7 148人学过",
+          "prc":"￥69",
+          "reprc":"￥95.00"
+        }
+        ]
+
+
+}
+
+
+
+
+

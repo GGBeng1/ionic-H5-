@@ -1,0 +1,99 @@
+
+<div class="page" (scrollTop)="test()">
+    <div class=title>
+        <ion-icon name='cube'></ion-icon>
+        微专业
+        <div class='word'>SPECIALIZATION</div>
+        <ul class='js'>
+            <li>跟随知名企业的一线资深工程师、设计师，</li>
+            <li>以及行业知名专家学习，</li>
+            <li>系统的掌握工作方法和技巧,获得全新的职业提升</li>
+        </ul>
+        <div class='btn'>
+            <a href="#down">查看所有专业 &gt;</a>
+        </div>
+    </div>
+    <div class='flex'>
+        <div class='img1'>
+            <img src="assets/imgs/module4/video.jpg">
+            <p>Python应用基础</p>
+        </div>
+        <div class='img1'>
+            <img src="assets/imgs/module4/video.jpg">
+            <p>Python应用基础</p>
+        </div>
+    </div>
+    <div class='container'>
+        <div class="header">
+            微专业导师简介
+        </div>
+        <ion-row class='fz'>
+            <ion-col col-6 *ngFor='let item of listTeacher'>
+                <div class="border">
+                    <div class='im1'>
+                        <img src="{{item.tou}}">
+                    </div>
+                    <div class='text'>{{item.text}}</div>
+                    <span>{{item.text1}}</span>
+                    <div class='im2'>
+                        <img src="{{item.biao}}">
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+    </div>
+    <div class='job' id='down'>
+        <h1>选择自己喜欢的职业</h1>
+        <ion-item class='i' no-lines>
+            <div class="small">
+                <ion-icon name='bulb' class='w'></ion-icon>
+                <p>产品设计</p>
+            </div>
+            <div class="small">
+                <ion-icon name='briefcase' class='w'></ion-icon>
+                <p>前台开发</p>
+            </div>
+            <div class="small">
+                <ion-icon name='clipboard' class='w'></ion-icon>
+                <p>后台开发</p>
+            </div>
+        </ion-item>
+        <ion-item class='i' no-lines>
+            <div class="small">
+                <ion-icon name='settings' class='w'></ion-icon>
+                <p>技术支撑</p>
+            </div>
+            <div class="small">
+                <ion-icon name='bulb' class='w'></ion-icon>
+                <p>艺术</p>
+            </div>
+            <div class="small">
+                <ion-icon name='star' class='w'></ion-icon>
+                <p>其它</p>
+            </div>
+        </ion-item>
+    </div>
+    <div class='list'>
+        <div class='inner'>
+            <ion-row>
+                <ion-col col-12 *ngFor='let item of listIntroduce' class='jz'>
+                    <img src="{{item.img}}">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.text}}</p>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+    <div class="question">
+        <h1>常见问题</h1>
+        <ion-row>
+            <ion-col col-12 *ngFor='let item of listQuestion' class='cz'>
+                <h6>{{item.h4}}</h6>
+                <p>{{item.text1}}</p>
+                <p>{{item.text2}}</p>
+                <p>{{item.text3}}</p>
+                <p>{{item.text4}}</p>
+            </ion-col>
+        </ion-row>
+    </div>
+</div>

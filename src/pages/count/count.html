@@ -1,0 +1,27 @@
+<!--
+  Generated template for the CountPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-item no-lines class='header'>
+        <ion-avatar item-start (click)='avatar()'>
+            <img src="../../assets/imgs/module3/11.jpg" alt="" />
+        </ion-avatar>
+            <h2>GGbeng</h2>
+            <h3>正在使用"微信"账号登陆</h3>
+    </ion-item>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-list class='itemList'>
+        <ion-item *ngFor='let item of listItem' no-lines detail-push class='border'>
+            <ion-icon name="{{item.name}}" item-start></ion-icon>
+            <h2>{{item.title}}</h2>
+        </ion-item>
+    </ion-list>
+</ion-content>

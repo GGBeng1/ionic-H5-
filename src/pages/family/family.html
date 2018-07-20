@@ -1,0 +1,76 @@
+<div class='main'>
+    <ion-item class="style-slider" no-lines>
+        <ion-slides autoplay="2000" loop="true" pager="true">
+            <ion-slide *ngFor="let item of Shuffling">
+                <img src="{{item.img}}" alt="">
+            </ion-slide>
+        </ion-slides>
+    </ion-item>
+    <ion-item no-lines class='nav'>
+        <h2>精彩栏目</h2>
+        <span>更多 &gt;</span>
+    </ion-item>
+    <div class='list'>
+        <ion-row class='fz'>
+            <ion-col col-12 *ngFor='let item of listPeople'>
+                <div class='top'>
+                    <img src="{{item.img}}" alt="">
+                    <p class='one'>{{item.name}}</p>
+                    <img src="{{item.img1}}" class='img'>
+                    <p class='two'>{{item.text}}</p>
+                    <div>{{item.jie}}</div>
+                </div>
+                <div class="down">
+                    <img src="{{item.img2}}" alt="">
+                    <p>什么值得读</p>
+                    <p class='yi'>6317人学</p>
+                </div>
+            </ion-col>
+        </ion-row>
+    </div>
+    <div class="project">
+        <h2>精选专题</h2>
+        <ion-slides>
+            <ion-slide class='img'>
+                <img src="assets/imgs/module4/d1.jpg">
+            </ion-slide>
+            <ion-slide class='img'>
+                <img src="assets/imgs/module4/d2.jpg">
+            </ion-slide>
+            <ion-slide class='img'>
+                <img src="assets/imgs/module4/d3.jpg">
+            </ion-slide>
+            <ion-slide class='img'>
+                <img src="assets/imgs/module4/d4.jpg">
+            </ion-slide>
+            <ion-slide class='img'>
+                <img src="assets/imgs/module4/d5.jpg">
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <div class="experts">
+        <div class=title>
+           推荐行家 
+        </div>
+        <ion-row>
+            <ion-col col-12 *ngFor='let item of listExperts'>
+                <ion-avatar item-start class='img'>
+                    <img src="{{item.img}}">
+                </ion-avatar>
+                <div class='right'>
+                    <div class='name'>{{item.name}}</div>
+                    <div class='jieshao'>{{item.jieshao}}</div>
+                    <div class='shuzi'>
+                        <span>{{item.num}}</span>
+                        <span>|</span>
+                        <span>{{item.student}}</span>
+                    </div>
+                </div>
+                <div class='footer'>
+                    <span>推荐学习:</span>
+                    <span>{{item.title}}</span>
+                </div>
+            </ion-col>
+        </ion-row>
+    </div>
+</div>

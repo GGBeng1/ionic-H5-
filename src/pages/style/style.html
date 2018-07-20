@@ -1,0 +1,201 @@
+<!-- 首页-个性推荐 -->
+
+<ion-item class="style-slider">
+	<ion-slides autoplay="2000" loop="true" pager="true">
+		<ion-slide *ngFor="let item of sildesList">
+			<img src="{{item.img}}" alt="">
+		</ion-slide>
+	</ion-slides>
+</ion-item>
+
+<!-- banner -->
+<img src="assets/imgs/module1/tab1_1_banner.png" alt="">
+<ion-item no-lines class="style-banner">
+	<button class="hot-icon">热门新知</button>
+	<span class="dec">7个整容式操作，让你的PPT高级起来</span>
+</ion-item>
+
+<!-- 直播title -->
+<div class="style-online">
+	<ion-icon item-start name="videocam" class="icon"></ion-icon>
+	<span class="title">直播预告</span>
+	<span class="dec">时间：06.27 19:30-20:30</span>
+</div>
+
+<!-- 直播题目 -->
+<ion-card class="style-online-card">
+	<strong>国考申论【有趣的年龄问题】</strong>
+	<img src="assets/imgs/module1/tab1_1_online_logo.jpeg" alt="">
+</ion-card>
+
+<!-- 限量秒杀 -->
+<div class="style-seckill">
+	<ion-icon name="flash" class="icon"></ion-icon>
+	<span class="title">限量秒杀</span>
+	<span class="dec">即将开始 <em>00</em>:<em>39</em>:<em>58</em></span>
+</div>
+<div class="style-sliders-wrap">
+	<ion-slides slidesPerView='2.5' spaceBetween='20'>
+		<ion-slide *ngFor="let item of seckillLists" class="style-sliders-con">
+			<div class="slider-item">
+				<img [src]="item.img" alt="" class="img">
+				<p class="title">{{item.title}}</p>
+				<p>
+					<span class="finaly">￥ <em>{{item.finaly}}</em></span>
+					<del class="del">￥ <em>{{item.del}}</em></del>
+				</p>
+				<p>
+					<span class="num">{{item.num}}</span>
+					<span class="btn">即将开抢</span>
+				</p>
+			</div>
+		</ion-slide>
+	</ion-slides>
+</div>
+
+<!-- 编辑精选 -->
+<div class="style-edit">
+	<p class="sm-title">编辑精选</p>
+	<h1 class="title">设计必学：2大利器</h1>
+	<div class="editLists-wrap">
+		<div class="editLists" *ngFor="let item of editList">
+			<img [src]="item.img" alt="" class="img">
+			<div class="editList-con">
+				<h6 class="editList-title">{{item.title}}</h6>
+				<p class="editList-star">
+					<ion-icon name="star" class="stars"></ion-icon> 
+					<span>{{item.score}}</span>
+					<span>{{item.num}}人学过</span>
+				</p>
+				<p class="editList-dec">{{item.dec}}</p>
+			</div>
+		</div>
+	</div>
+	<div class="more">
+		<a href="#">查看更多 ></a>
+	</div>
+</div>
+
+<!-- 移动开发 -->
+<div class="style-edit">
+	<p class="sm-title">移动开发</p>
+	<div class="editLists-wrap">
+		<div class="editLists" *ngFor="let item of editList">
+			<img [src]="item.img" alt="" class="img">
+			<div class="editList-con">
+				<h6 class="editList-title">{{item.title}}</h6>
+				<p class="editList-star">
+					<ion-icon name="star" class="stars"></ion-icon> 
+					<span>{{item.score}}</span>
+					<span>{{item.num}}人学过</span>
+				</p>
+				<p class="editList-dec">{{item.dec}}</p>
+			</div>
+		</div>
+	</div>
+	<div class="more">
+		<a href="#">查看更多 ></a>
+	</div>
+</div>
+
+<!-- 办公软件 -->
+<div class="style-edit">
+	<p class="sm-title">办公软件</p>
+	<div class="editLists-wrap">
+		<div class="editLists" *ngFor="let item of editList">
+			<img [src]="item.img" alt="" class="img">
+			<div class="editList-con">
+				<h6 class="editList-title">{{item.title}}</h6>
+				<p class="editList-star">
+					<ion-icon name="star" class="stars"></ion-icon> 
+					<span>{{item.score}}</span>
+					<span>{{item.num}}人学过</span>
+				</p>
+				<p class="editList-dec">{{item.dec}}</p>
+			</div>
+		</div>
+	</div>
+	<div class="more">
+		<a href="#">查看更多 ></a>
+	</div>
+</div>
+
+<!-- 编辑精选 -->
+<div class="style-edit">
+	<p class="sm-title">编辑精选</p>
+	<h1 class="title">设计必学：2大利器</h1>
+	<div class="editLists-wrap">
+		<div class="editLists" *ngFor="let item of editList">
+			<img [src]="item.img" alt="" class="img">
+			<div class="editList-con">
+				<h6 class="editList-title">{{item.title}}</h6>
+				<p class="editList-star">
+					<ion-icon name="star" class="stars"></ion-icon> 
+					<span>{{item.score}}</span>
+					<span>{{item.num}}人学过</span>
+				</p>
+				<p class="editList-dec">{{item.dec}}</p>
+			</div>
+		</div>
+	</div>
+	<div class="more">
+		<a href="#">查看更多 ></a>
+	</div>
+</div>
+
+<!-- 每日新知 -->
+<div class="style-everyday">
+	<h1 class="everyday-title">
+		<img src="assets/imgs/module1/everyday_title.png" alt="">
+	</h1>
+	<ion-item class="everyday-item" *ngFor="let item of everydayData">
+		<div class="item-title">
+			<img [src]="item.titleImg" alt="">
+			<span>{{item.titleText}}</span>
+		</div>
+		<div class="item-con">
+			<div class="l">
+				<h6>{{item.title}}</h6>
+				<p>{{item.dec}}</p>
+			</div>
+			<div class="r">
+				<img [src]="item.img" alt="">
+			</div>
+		</div>
+	</ion-item>
+
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+		<ion-infinite-scroll-content
+			loadingSpinner="bubbles"
+			loadingText="loading...">
+		</ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+page-family {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    .main {
+        background-color: #F3F5F8;
+    }
+    .fixed-content {
+        margin: 0;
+    }
+
+    .scroll-content {
+        margin: 0;
+    }
+
+    .item-ios {
+        color: #333;
+    }
+
+    .style-slider {
+        padding: 0;
+
+        .label,
+        .label-ios {
+            margin: 0!important;
+        }
+
+        .item-inner {
+            padding: 0 !important;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .nav {
+        line-height: 40px;
+        margin-top: 10px;
+        padding-left: 8px;
+        background-color: #fff;
+        .label,
+        .label-ios {
+            margin: 0;
+            h2 {
+                display: inline-block;
+                font-weight: 700;
+            }
+            span {
+                font-size: 14px;
+                float: right;
+            }
+        }
+    }
+    .list {
+        padding: 3px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        .fz {
+            padding: 0 10px;
+            width: 100%;
+            overflow: hidden;
+            .col {
+                background-color: #fff;
+                margin-top: 20px;
+                overflow: hidden;
+                width: 100%;
+                .top {
+                    width: 95%;
+                    overflow: hidden;
+                    margin: auto;
+                    border-bottom: 1px solid #94979E;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        float: left;
+                    }
+                    .one {
+                        width: 60%;
+                        font-size: 15px;
+                        float: left;
+                        margin-left: 10px;
+                        margin-top: 8px;
+                        font-weight: 500;
+                    }
+                    .img {
+                        float: right;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .two {
+                        float: left;
+                        font-size: 10px;
+                        margin-top: 5px;
+                        color: #94979E;
+                        margin-left: 10px;
+                    }
+                    div {
+                        float: left;
+                        font-size: 13px;
+                        margin-left: 10px;
+                        width: 220px;
+                        margin-top: 15px;
+                        padding-bottom: 20px;
+                    }
+                }
+                .down {
+                    width: 95%;
+                    overflow: hidden;
+                    margin: auto;
+                    margin-top: 9.5px;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        float: left;
+                    }
+                    p {
+                        float: left;
+                        margin-left: 10px;
+                        font-size: 10px;
+                        color: #94979E;
+                        margin-top: 2px;
+                    }
+                    .yi {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+    .project {
+        height: 300px;
+        width: 100%;
+        padding: 15px;
+        background-color: #fff;
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    .experts {
+        width: 100%;
+        height: 160px;
+        margin-top: 20px;
+        .title {
+            height: 40px;
+            line-height: 40px;
+            background-color: #fff;
+            padding-left: 10px;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        .col {
+            background-color: #fff;
+            padding-top: 10px;
+            padding-left: 10px;
+            border-bottom: 1px solid #E8EBF2;
+            .img {
+                width: 80px;
+                height: 80px;
+                float: left;
+                margin-right: 15px;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .right {
+                height: 100px;
+                line-height: 26px;
+                color: #94979E;
+                font-size: 12px;
+                .name {
+                    padding-top: 5px;
+                    font-size: 17px;
+                    color: #000;
+                    
+                }
+            }
+            .footer {
+                padding-left: 15px;
+                span {
+                    font-size: 15px;
+                    color: #94979E;
+                    margin-right: 19px;
+                }
+                span:last-child {
+                    color: #000;
+                }
+            }
+        }
+    }
+    .kong {
+        height: 50px;
+    }
+}

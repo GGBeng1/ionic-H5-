@@ -1,0 +1,96 @@
+page-list {
+	background: #eee;
+
+	ul {
+		margin: 0 !important;
+    	padding-left: 0 !important;
+	}
+
+	li {
+		list-style: none !important;
+	}
+
+	ion-searchbar{
+        background-color: #fff !important;
+    }
+
+    .searchbar-input{
+        background-color: #eee !important;
+        border-radius: 10px !important;
+    }
+
+    .ion-segment {
+    	display: block;
+    }
+
+    .segment-md {
+    	.segment-button {
+			display: block;
+			width: 100%;
+    	}
+    }
+
+    .tabList {
+		margin-top: 64px;
+		height: 100%;
+
+    	.nav {
+    		float: left;
+
+    		.nav-item {
+    			padding: 0;
+    			width: 80px;
+    			text-align: center;
+    			height: 40px;
+    			line-height: 40px;
+    			font-size: 11px;
+    			color: #666;
+    		}
+
+    		.active {
+				background: #fff;
+				border-left: 3px solid #5fbe81;
+    		}
+    	}
+
+    	.con {
+    		margin-left: 80px;
+    		padding: 10px;
+    		background: #fff;
+    		color: #333;
+    		height: 100%;
+
+    		h6 {
+				font-size: 14px;
+				color: #000;
+			}
+
+    		.sm-title {
+    			margin: 10px 0;
+
+    			span {
+    				display: inline-block;
+    				margin: 0 10px 10px 0;
+    				padding: 5px 15px;
+    				border-radius: 20px;
+    				background: #ececec;
+    				font-size: 11px;
+    			}
+    		}
+
+    		.edit {
+    			li {
+					line-height: 26px;
+					font-size: 12px;
+    			}
+
+    			span.dot {
+    				display: inline-block;
+    				width: 5px;
+    				height: 5px;
+    				border-radius: 50%;
+    			}
+    		}
+    	}
+    }
+}

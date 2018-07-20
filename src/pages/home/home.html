@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-searchbar placeholder='搜索你爱的课程吧'></ion-searchbar>
+    <ion-segment [(ngModel)]="testSegment" mode="md">
+        <ion-segment-button *ngFor="let testItem of testArray" value="{{testItem}}">
+            {{testItem}}
+        </ion-segment-button>
+    </ion-segment>
+</ion-header>
+<!-- (swipe)="swipeEvnet($event)" -->
+<ion-content >
+    <div [ngSwitch]="testSegment">
+        <div *ngSwitchCase="'个性推荐'">
+            <page-style></page-style>
+        </div>
+        <div *ngSwitchCase="'精品课'">
+            <page-class></page-class>
+        </div>
+        <div *ngSwitchCase="'微专业'">
+            <page-professional></page-professional>
+        </div>
+        <div *ngSwitchCase="'行家'">
+            <page-family></page-family>
+        </div>
+    </div>
+    <!-- <ion-slides>
+        <ion-slide >
+            <page-style></page-style>
+        </ion-slide>
+        <ion-slide >
+            <page-class></page-class>
+        </ion-slide>
+        <ion-slide style="background: skyblue;">
+          <h2>微专业</h2>
+        </ion-slide>
+        <ion-slide style="background: red;">
+          <h2>行家</h2>
+        </ion-slide>
+    </ion-slides> -->
+</ion-content>

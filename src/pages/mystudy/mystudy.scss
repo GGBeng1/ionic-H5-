@@ -1,0 +1,26 @@
+page-mystudy {
+    .segment {
+        height: 50px;
+        border-top: 1px solid #ddd;
+        border-bottom: 6px solid #ddd;
+    }
+    .segment-button {
+        width: 30%;
+        text-align: center;
+        border-right: 1px solid #ddd
+    }
+    .segment-button:last-child {
+        border-right:none;
+    }
+    .find{
+        text-align: center;
+        position: relative;
+        top: 170px;
+    }
+    .header {
+        h3 {
+            font-size: 13px;
+            color:#ccc;
+        }
+    }
+}
